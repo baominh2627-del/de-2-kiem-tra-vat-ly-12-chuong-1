@@ -49,9 +49,9 @@ export const examData = [
     id: "p1_6",
     part: 1,
     question: "Trong quá trình một vật nhận nhiệt lượng và thực hiện công thì $A$ và $Q$ trong biểu thức của định luật I của nhiệt động lực học $\\Delta U = Q + A$ có quy ước dấu là",
-    options: ["$Q < 0, A < 0$.", "$Q > 0, A > 0$.", "$Q < 0, A > 0$.", "$Q > 0, A < 0$."],
+    options: ["$Q &lt; 0, A &lt; 0$.", "$Q &gt; 0, A &gt; 0$.", "$Q &lt; 0, A &gt; 0$.", "$Q &gt; 0, A &lt; 0$."],
     correctAnswer: 3,
-    explanation: "Vật nhận nhiệt lượng nên $Q > 0$. Vật thực hiện công nên $A < 0$.",
+    explanation: "Vật nhận nhiệt lượng nên $Q &gt; 0$. Vật thực hiện công nên $A &lt; 0$.",
     image: null
   },
   {
@@ -123,7 +123,7 @@ export const examData = [
     question: "Biết nhiệt dung riêng của nước và của rượu lần lượt là $4180 \\text{ J/kg.K}$ và $2500 \\text{ J/kg.K}$. Dùng một ấm điện có công suất không đổi lần lượt đun nóng cùng một khối lượng nước và rượu: Biết nhiệt độ ban đầu của nước và rượu bằng nhau. Nhận xét nào sau đây đúng?",
     options: ["Rượu nóng nhanh hơn nước", "Nước và rượu nóng nhanh như nhau.", "Nước nóng nhanh hơn rượu.", "Ban đầu nước nóng nhanh hơn, lúc sau rượu nóng nhanh hơn."],
     correctAnswer: 0,
-    explanation: "Vì $c_{\\text{rượu}} < c_{\\text{nước}}$ nên với cùng một nhiệt lượng và khối lượng, độ tăng nhiệt độ của rượu sẽ lớn hơn $\\Rightarrow$ rượu nóng lên nhanh hơn.",
+    explanation: "Vì $c_{\\text{rượu}} &lt; c_{\\text{nước}}$ nên với cùng một nhiệt lượng và khối lượng, độ tăng nhiệt độ của rượu sẽ lớn hơn $\\Rightarrow$ rượu nóng lên nhanh hơn.",
     image: null
   },
   {
@@ -174,7 +174,7 @@ export const examData = [
       { text: "Trong phương pháp chưng cất, người ta ứng dụng sự hóa hơi và ngưng tụ.", correct: true },
       { text: "Chuyển thể là quá trình biến đổi chất.", correct: false }
     ],
-    explanation: "a) Đúng. Đặc điểm chuyển động của các phân tử ở thể rắn, lỏng, khí là khác nhau.\nb) Sai. Sự sôi xảy ra ở cả trong lòng và trên bề mặt chất lỏng. Bay hơi mới chỉ xảy ra trên bề mặt.\nc) Đúng. Chưng cất dựa vào sự hóa hơi của chất lỏng rồi ngưng tụ lại để thu tinh chất.\nd) Sai. Chuyển thể là sự biến đổi trạng thái vật lý, chất vẫn giữ nguyên bản chất hóa học."
+    explanation: "a) Đúng. Đặc điểm chuyển động của các phân tử ở thể rắn, lỏng, khí là khác nhau.<br>b) Sai. Sự sôi xảy ra ở cả trong lòng và trên bề mặt chất lỏng. Bay hơi mới chỉ xảy ra trên bề mặt.<br>c) Đúng. Chưng cất dựa vào sự hóa hơi của chất lỏng rồi ngưng tụ lại để thu tinh chất.<br>d) Sai. Chuyển thể là sự biến đổi trạng thái vật lý, chất vẫn giữ nguyên bản chất hóa học."
   },
   {
     id: "p2_2",
@@ -186,32 +186,32 @@ export const examData = [
       { text: "Khi áp lòng bàn tay vào mặt, có sự truyền nhiệt lượng từ mặt vào bàn tay.", correct: false },
       { text: "Trong toàn bộ quá trình từ lúc xoa tay đến lúc áp tay vào má, tổng năng lượng (bao gồm cơ năng và nhiệt năng) của hệ (bao gồm cả môi trường) luôn được bảo toàn.", correct: true }
     ],
-    explanation: "a) Đúng. Lực ma sát thực hiện công làm tăng nội năng của bàn tay.\nb) Sai. Bàn tay ấm lên do nhận công từ việc xoa tay, không phải do truyền nhiệt.\nc) Sai. Bàn tay đang ấm hơn mặt nên nhiệt lượng sẽ truyền từ tay sang mặt.\nd) Đúng. Theo định luật bảo toàn và chuyển hóa năng lượng, tổng năng lượng của một hệ cô lập luôn được bảo toàn."
+    explanation: "a) Đúng. Lực ma sát thực hiện công làm tăng nội năng của bàn tay.<br>b) Sai. Bàn tay ấm lên do nhận công từ việc xoa tay, không phải do truyền nhiệt.<br>c) Sai. Bàn tay đang ấm hơn mặt nên nhiệt lượng sẽ truyền từ tay sang mặt.<br>d) Đúng. Theo định luật bảo toàn và chuyển hóa năng lượng, tổng năng lượng của một hệ cô lập luôn được bảo toàn."
   },
   {
     id: "p2_3",
     part: 2,
-    question: "Một nhóm học sinh tìm hiểu về sự truyền nhiệt.\nCác bạn có các dụng cụ và cách tiến hành như sau:\nDụng cụ\n• Cốc nhôm đựng $200 \\text{ ml}$ nước ở nhiệt độ $36^\\circ\\text{C}$ (1).\n• Bình cách nhiệt đựng $500 \\text{ ml}$ nước ở nhiệt độ $41^\\circ\\text{C}$ (2).\n• Hai nhiệt kế thủy ngân (3).\nTiến hành: Đặt cốc nhôm vào trong lòng bình cách nhiệt như hình bên và quan sát số chỉ nhiệt kế để tìm hiểu về sự truyền nhiệt của chúng.",
+    question: "Một nhóm học sinh tìm hiểu về sự truyền nhiệt.<br>Các bạn có các dụng cụ và cách tiến hành như sau:<br><b>Dụng cụ</b><br>• Cốc nhôm đựng $200 \\text{ ml}$ nước ở nhiệt độ $36^\\circ\\text{C}$ (1).<br>• Bình cách nhiệt đựng $500 \\text{ ml}$ nước ở nhiệt độ $41^\\circ\\text{C}$ (2).<br>• Hai nhiệt kế thủy ngân (3).<br><b>Tiến hành:</b> Đặt cốc nhôm vào trong lòng bình cách nhiệt như hình bên và quan sát số chỉ nhiệt kế để tìm hiểu về sự truyền nhiệt của chúng.",
     statements: [
       { text: "Dụng cụ (3) là nhiệt kế thủy ngân (nhiệt kế y tế) hoạt động dựa trên tính chất giãn nở vì nhiệt của thủy ngân.", correct: true },
       { text: "Nội năng của nước ở bình (2) tăng do thế năng của cột nước tăng vì nó được dâng cao hơn so với ban đầu.", correct: false },
       { text: "Thang chia nhiệt độ của nhiệt kế thủy ngân ghi nhiệt độ từ $35^\\circ\\text{C}$ đến $42^\\circ\\text{C}$ nên việc lựa chọn nhiệt độ trong thí nghiệm của nhóm là một trong những cách chọn hợp lý.", correct: false },
       { text: "Sau một thời gian cả hai nhiệt kế chỉ giá trị không đổi và hai giá trị này bằng nhau chứng tỏ không có sự truyền nhiệt lượng giữa hai vật có nhiệt độ bằng nhau.", correct: false }
     ],
-    explanation: "a) Đúng. Nhiệt kế thủy ngân hoạt động dựa trên sự giãn nở nhiệt của thủy ngân.\nb) Sai. Thế năng trọng trường không phải là nội năng. Nội năng chỉ gồm động năng phân tử và thế năng tương tác phân tử.\nc) Sai. Nhiệt kế y tế có phần eo thắt để giữ mức thủy ngân nên không thể tự tụt xuống khi đo nhiệt độ giảm dần, do đó KHÔNG hợp lý trong thí nghiệm theo dõi nhiệt độ liên tục giảm.\nd) Sai. Khi cân bằng nhiệt, vẫn có sự trao đổi nhiệt lượng vi mô giữa hai vật nhưng tốc độ bằng nhau nên nhiệt lượng truyền ròng bằng 0, chứ không phải hoàn toàn không có sự truyền nhiệt.",
+    explanation: "a) Đúng. Nhiệt kế thủy ngân hoạt động dựa trên sự giãn nở nhiệt của thủy ngân.<br>b) Sai. Thế năng trọng trường không phải là nội năng. Nội năng chỉ gồm động năng phân tử và thế năng tương tác phân tử.<br>c) Sai. Nhiệt kế y tế có phần eo thắt để giữ mức thủy ngân nên không thể tự tụt xuống khi đo nhiệt độ giảm dần, do đó KHÔNG hợp lý trong thí nghiệm theo dõi nhiệt độ liên tục giảm.<br>d) Sai. Khi cân bằng nhiệt, vẫn có sự trao đổi nhiệt lượng vi mô giữa hai vật nhưng tốc độ bằng nhau nên nhiệt lượng truyền ròng bằng 0, chứ không phải hoàn toàn không có sự truyền nhiệt.",
     image: "cau_3_p2.png"
   },
   {
     id: "p2_4",
     part: 2,
-    question: "Một nhóm học sinh thảo luận phương án thí nghiệm xác định nhiệt hóa hơi riêng của nước. Họ dùng các dụng cụ: Biến thế nguồn (1); oát kế có tích hợp chức năng đo thời gian (2); nhiệt kế điện tử (3); nhiệt lượng kế kèm dây điện trở (4); cân điện tử (5) và các dây nối như hình bên. Phương án thí nghiệm của họ gồm hai giai đoạn và được tóm tắt như sau:\nGiai đoạn 1. Đặt nhiệt lượng kế (đã tháo nắp ra khỏi bình) lên cân điện tử, đổ một lượng nước ấm có nhiệt độ $50^\\circ\\text{C}$ vào bình sao cho toàn bộ dây điện trở chìm trong nước. Xác định khối lượng nước $m_0$ có trong bình lúc này.\nGiai đoạn 2. Cấp điện cho dây điện trở. Khi nước trong bình bắt đầu sôi ổn định ($100^\\circ\\text{C}$), tiến hành đo thời gian hoá hơi (đồng hồ thời gian bắt đầu chạy từ số 0) và xác định khối lượng của nước còn lại trong bình ở một số thời điểm.\n- Khi đồng hồ chỉ giá trị $t_1$, khối lượng của nước còn lại trong bình là $m_1$.\n- Khi đồng hồ chỉ giá trị $t_2$, khối lượng của nước còn lại trong bình là $m_2$ ($m_2 < m_1$).\nCoi số đo công suất trên oát kế không đổi là $P$, trong quá trình làm thí nghiệm toàn bộ dây điện trở chìm trong nước. Bỏ qua sự trao đổi nhiệt với vỏ bình nhiệt lượng kế và môi trường.",
+    question: "Một nhóm học sinh thảo luận phương án thí nghiệm xác định nhiệt hóa hơi riêng của nước. Họ dùng các dụng cụ: Biến thế nguồn (1); oát kế có tích hợp chức năng đo thời gian (2); nhiệt kế điện tử (3); nhiệt lượng kế kèm dây điện trở (4); cân điện tử (5) và các dây nối như hình bên. Phương án thí nghiệm của họ gồm hai giai đoạn và được tóm tắt như sau:<br><b>Giai đoạn 1.</b> Đặt nhiệt lượng kế (đã tháo nắp ra khỏi bình) lên cân điện tử, đổ một lượng nước ấm có nhiệt độ $50^\\circ\\text{C}$ vào bình sao cho toàn bộ dây điện trở chìm trong nước. Xác định khối lượng nước $m_0$ có trong bình lúc này.<br><b>Giai đoạn 2.</b> Cấp điện cho dây điện trở. Khi nước trong bình bắt đầu sôi ổn định ($100^\\circ\\text{C}$), tiến hành đo thời gian hoá hơi (đồng hồ thời gian bắt đầu chạy từ số 0) và xác định khối lượng của nước còn lại trong bình ở một số thời điểm.<br>- Khi đồng hồ chỉ giá trị $t_1$, khối lượng của nước còn lại trong bình là $m_1$.<br>- Khi đồng hồ chỉ giá trị $t_2$, khối lượng của nước còn lại trong bình là $m_2$ ($m_2 &lt; m_1$).<br>Coi số đo công suất trên oát kế không đổi là $P$, trong quá trình làm thí nghiệm toàn bộ dây điện trở chìm trong nước. Bỏ qua sự trao đổi nhiệt với vỏ bình nhiệt lượng kế và môi trường.",
     statements: [
       { text: "Trong quá trình sôi ổn định, động năng trung bình của các phân tử nước tăng dần.", correct: false },
       { text: "Trong quá trình đun, toàn bộ nhiệt lượng mà nước nhận được từ dây điện trở dùng để phá vỡ liên kết giữa các phân tử nước.", correct: false },
       { text: "Nhiệt hóa hơi riêng của nước được xác định theo công thức $L = \\frac{P(t_2 - t_1)}{m_1 - m_2}$", correct: true },
       { text: "Nếu mực nước hạ thấp làm một phần dây điện trở không chìm trong nước (trước thời điểm $t_2$) thì giá trị nhiệt hóa hơi riêng của nước xác định được sẽ nhỏ hơn so với khi dây luôn chìm hoàn toàn.", correct: false }
     ],
-    explanation: "a) Sai. Khi sôi ổn định, nhiệt độ nước giữ nguyên nên động năng trung bình của các phân tử không đổi.\nb) Sai. Trong giai đoạn 1, nhiệt lượng dùng để tăng nhiệt độ của nước. Giai đoạn 2 nhiệt lượng mới dùng để phá vỡ liên kết.\nc) Đúng. Công suất $P$ không đổi, nhiệt lượng cung cấp từ $t_1$ đến $t_2$ là $Q = P(t_2 - t_1)$. Khối lượng nước hóa hơi là $m_1 - m_2$. Vậy $L = \\frac{Q}{m} = \\frac{P(t_2 - t_1)}{m_1 - m_2}$.\nd) Sai. Nếu dây điện trở lộ ra, một phần nhiệt truyền cho môi trường không khí. Hiệu suất truyền nhiệt cho nước giảm làm lượng nước hóa hơi ($m_1 - m_2$) nhỏ hơn. Theo công thức tính toán, mẫu số nhỏ hơn sẽ làm kết quả đo nhiệt hóa hơi $L$ LỚN HƠN thực tế.",
+    explanation: "a) Sai. Khi sôi ổn định, nhiệt độ nước giữ nguyên nên động năng trung bình của các phân tử không đổi.<br>b) Sai. Trong giai đoạn 1, nhiệt lượng dùng để tăng nhiệt độ của nước. Giai đoạn 2 nhiệt lượng mới dùng để phá vỡ liên kết.<br>c) Đúng. Công suất $P$ không đổi, nhiệt lượng cung cấp từ $t_1$ đến $t_2$ là $Q = P(t_2 - t_1)$. Khối lượng nước hóa hơi là $m_1 - m_2$. Vậy $L = \\frac{Q}{m} = \\frac{P(t_2 - t_1)}{m_1 - m_2}$.<br>d) Sai. Nếu dây điện trở lộ ra, một phần nhiệt truyền cho môi trường không khí. Hiệu suất truyền nhiệt cho nước giảm làm lượng nước hóa hơi ($m_1 - m_2$) nhỏ hơn. Theo công thức tính toán, mẫu số nhỏ hơn sẽ làm kết quả đo nhiệt hóa hơi $L$ LỚN HƠN thực tế.",
     image: "cau_4_p2.png"
   },
 
@@ -219,39 +219,39 @@ export const examData = [
   {
     id: "p3_1",
     part: 3,
-    question: "Một em bé bị sốt, thân nhiệt đang có nhiệt độ $38,9^\\circ\\text{C}$ được bác sĩ chỉ định dùng thuốc hạ sốt. Cơn sốt hạ xuống thân nhiệt còn $37,4^\\circ\\text{C}$ trong $20 \\text{ phút}$. Coi rằng cơ chế bay hơi của mồ hôi trên da là cách duy nhất để làm giảm nhiệt độ cơ thể, em bé có cân nặng là $15 \\text{ kg}$. Nhiệt dung riêng của cơ thể em bé lấy bằng nhiệt dung riêng của nước là $1000 \\text{ cal/(kg.}^\\circ\\text{C)}$ và nhiệt hoá hơi của nước ở điều kiện trên là $580 \\text{ cal/g}$.\nTốc độ thay đổi nhiệt độ của em bé trong $20 \\text{ phút}$ trên là $x \\cdot 10^{-3} \\text{ }^\\circ\\text{C/s}$. Tìm $x$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
+    question: "Một em bé bị sốt, thân nhiệt đang có nhiệt độ $38,9^\\circ\\text{C}$ được bác sĩ chỉ định dùng thuốc hạ sốt. Cơn sốt hạ xuống thân nhiệt còn $37,4^\\circ\\text{C}$ trong $20 \\text{ phút}$. Coi rằng cơ chế bay hơi của mồ hôi trên da là cách duy nhất để làm giảm nhiệt độ cơ thể, em bé có cân nặng là $15 \\text{ kg}$. Nhiệt dung riêng của cơ thể em bé lấy bằng nhiệt dung riêng của nước là $1000 \\text{ cal/(kg.}^\\circ\\text{C)}$ và nhiệt hoá hơi của nước ở điều kiện trên là $580 \\text{ cal/g}$.<br>Tốc độ thay đổi nhiệt độ của em bé trong $20 \\text{ phút}$ trên là $x \\cdot 10^{-3} \\text{ }^\\circ\\text{C/s}$. Tìm $x$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
     correctAnswer: "1.25",
-    explanation: "Sự thay đổi nhiệt độ là $\\Delta T = 38,9 - 37,4 = 1,5^\\circ\\text{C}$.\nThời gian giảm nhiệt là $\\Delta t = 20 \\text{ phút} = 20 \\times 60 = 1200 \\text{ s}$.\nTốc độ thay đổi nhiệt độ là $v = \\frac{\\Delta T}{\\Delta t} = \\frac{1,5}{1200} = 1,25 \\times 10^{-3} \\text{ }^\\circ\\text{C/s}$.\nDo đó $x = 1,25$.",
+    explanation: "Sự thay đổi nhiệt độ là $\\Delta T = 38,9 - 37,4 = 1,5^\\circ\\text{C}$.<br>Thời gian giảm nhiệt là $\\Delta t = 20 \\text{ phút} = 20 \\times 60 = 1200 \\text{ s}$.<br>Tốc độ thay đổi nhiệt độ là $v = \\frac{\\Delta T}{\\Delta t} = \\frac{1,5}{1200} = 1,25 \\times 10^{-3} \\text{ }^\\circ\\text{C/s}$.<br>Do đó $x = 1,25$.",
     image: null
   },
   {
     id: "p3_2",
     part: 3,
-    question: "Một em bé bị sốt, thân nhiệt đang có nhiệt độ $38,9^\\circ\\text{C}$ được bác sĩ chỉ định dùng thuốc hạ sốt. Cơn sốt hạ xuống thân nhiệt còn $37,4^\\circ\\text{C}$ trong $20 \\text{ phút}$. Coi rằng cơ chế bay hơi của mồ hôi trên da là cách duy nhất để làm giảm nhiệt độ cơ thể, em bé có cân nặng là $15 \\text{ kg}$. Nhiệt dung riêng của cơ thể em bé lấy bằng nhiệt dung riêng của nước là $1000 \\text{ cal/(kg.}^\\circ\\text{C)}$ và nhiệt hoá hơi của nước ở điều kiện trên là $580 \\text{ cal/g}$.\nTốc độ bay hơi trung bình trên da do thuốc gây ra là bao nhiêu $\\text{gam/phút}$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
+    question: "Một em bé bị sốt, thân nhiệt đang có nhiệt độ $38,9^\\circ\\text{C}$ được bác sĩ chỉ định dùng thuốc hạ sốt. Cơn sốt hạ xuống thân nhiệt còn $37,4^\\circ\\text{C}$ trong $20 \\text{ phút}$. Coi rằng cơ chế bay hơi của mồ hôi trên da là cách duy nhất để làm giảm nhiệt độ cơ thể, em bé có cân nặng là $15 \\text{ kg}$. Nhiệt dung riêng của cơ thể em bé lấy bằng nhiệt dung riêng của nước là $1000 \\text{ cal/(kg.}^\\circ\\text{C)}$ và nhiệt hoá hơi của nước ở điều kiện trên là $580 \\text{ cal/g}$.<br>Tốc độ bay hơi trung bình trên da do thuốc gây ra là bao nhiêu $\\text{gam/phút}$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
     correctAnswer: "1.94",
-    explanation: "Nhiệt lượng tỏa ra để hạ thân nhiệt là $Q = mc\\Delta T = 15 \\times 1000 \\times (38,9 - 37,4) = 15000 \\times 1,5 = 22500 \\text{ cal}$.\nNhiệt lượng này bằng nhiệt lượng do mồ hôi bay hơi lấy đi $Q = m_{\\text{nước}}L \\Rightarrow m_{\\text{nước}} = \\frac{Q}{L} = \\frac{22500}{580} \\approx 38,79 \\text{ g}$.\nTốc độ bay hơi là $v = \\frac{m_{\\text{nước}}}{t} = \\frac{38,79}{20} \\approx 1,94 \\text{ g/phút}$.",
+    explanation: "Nhiệt lượng tỏa ra để hạ thân nhiệt là $Q = mc\\Delta T = 15 \\times 1000 \\times (38,9 - 37,4) = 15000 \\times 1,5 = 22500 \\text{ cal}$.<br>Nhiệt lượng này bằng nhiệt lượng do mồ hôi bay hơi lấy đi $Q = m_{\\text{nước}}L \\Rightarrow m_{\\text{nước}} = \\frac{Q}{L} = \\frac{22500}{580} \\approx 38,79 \\text{ g}$.<br>Tốc độ bay hơi là $v = \\frac{m_{\\text{nước}}}{t} = \\frac{38,79}{20} \\approx 1,94 \\text{ g/phút}$.",
     image: null
   },
   {
     id: "p3_3",
     part: 3,
-    question: "Một nhóm học sinh thực hiện thí nghiệm xác định nhiệt nóng chảy riêng của nước đá. Nhóm cung cấp nhiệt năng cho một lượng nước đá với công suất không đổi, theo dõi nhiệt độ ($t$) theo thời gian ($\\theta$) thu được đồ thị như hình vẽ.\nNhiệt độ ban đầu của nước đá tính theo thang độ K là bao nhiêu? (kết quả lấy đến hàng đơn vị)",
+    question: "Một nhóm học sinh thực hiện thí nghiệm xác định nhiệt nóng chảy riêng của nước đá. Nhóm cung cấp nhiệt năng cho một lượng nước đá với công suất không đổi, theo dõi nhiệt độ ($t$) theo thời gian ($\\theta$) thu được đồ thị như hình vẽ.<br>Nhiệt độ ban đầu của nước đá tính theo thang độ K là bao nhiêu? (kết quả lấy đến hàng đơn vị)",
     correctAnswer: "233",
-    explanation: "Dựa vào đồ thị ta thấy giao điểm với trục tung là $-40$, nghĩa là nhiệt độ ban đầu của nước đá là $t = -40^\\circ\\text{C}$.\nNhiệt độ tính theo thang Kelvin là $T = -40 + 273 = 233 \\text{ K}$.",
+    explanation: "Dựa vào đồ thị ta thấy giao điểm với trục tung là $-40$, nghĩa là nhiệt độ ban đầu của nước đá là $t = -40^\\circ\\text{C}$.<br>Nhiệt độ tính theo thang Kelvin là $T = -40 + 273 = 233 \\text{ K}$.",
     image: "cau_3_p3.png"
   },
   {
     id: "p3_4",
     part: 3,
-    question: "Một nhóm học sinh thực hiện thí nghiệm xác định nhiệt nóng chảy riêng của nước đá. Nhóm cung cấp nhiệt năng cho một lượng nước đá với công suất không đổi, theo dõi nhiệt độ ($t$) theo thời gian ($\\theta$) thu được đồ thị như hình vẽ.\nBiết rằng nhiệt dung riêng của nước đá là $2,10 \\times 10^3 \\text{ J/kg.K}$, thí nghiệm cho thấy $\\theta_2 = 5\\theta_1$, nhiệt nóng chảy riêng của nước đá mà nhóm đo được bằng $x \\cdot 10^5 \\text{ J/kg}$. Giá trị của $x$ là bao nhiêu (kết quả lấy đến hàng phần trăm)?",
+    question: "Một nhóm học sinh thực hiện thí nghiệm xác định nhiệt nóng chảy riêng của nước đá. Nhóm cung cấp nhiệt năng cho một lượng nước đá với công suất không đổi, theo dõi nhiệt độ ($t$) theo thời gian ($\\theta$) thu được đồ thị như hình vẽ.<br>Biết rằng nhiệt dung riêng của nước đá là $2,10 \\times 10^3 \\text{ J/kg.K}$, thí nghiệm cho thấy $\\theta_2 = 5\\theta_1$, nhiệt nóng chảy riêng của nước đá mà nhóm đo được bằng $x \\cdot 10^5 \\text{ J/kg}$. Giá trị của $x$ là bao nhiêu (kết quả lấy đến hàng phần trăm)?",
     correctAnswer: "3.36",
-    explanation: "Nhiệt lượng làm nước đá tăng từ $-40^\\circ\\text{C}$ đến $0^\\circ\\text{C}$ là $Q_1 = m c \\Delta t$. Thời gian tương ứng là $\\theta_1$.\nNhiệt lượng làm nước đá nóng chảy là $Q_2 = m\\lambda$. Thời gian tương ứng là $\\theta_2 - \\theta_1 = 5\\theta_1 - \\theta_1 = 4\\theta_1$.\nVì công suất cấp nhiệt không đổi nên tỉ lệ nhiệt lượng bằng tỉ lệ thời gian: $\\frac{Q_2}{Q_1} = \\frac{4\\theta_1}{\\theta_1} = 4$.\nTa có: $m\\lambda = 4 m c \\Delta t \\Rightarrow \\lambda = 4 c \\Delta t = 4 \\times 2,10 \\times 10^3 \\times 40 = 3,36 \\times 10^5 \\text{ J/kg}$.\nDo đó $x = 3,36$.",
+    explanation: "Nhiệt lượng làm nước đá tăng từ $-40^\\circ\\text{C}$ đến $0^\\circ\\text{C}$ là $Q_1 = m c \\Delta t$. Thời gian tương ứng là $\\theta_1$.<br>Nhiệt lượng làm nước đá nóng chảy là $Q_2 = m\\lambda$. Thời gian tương ứng là $\\theta_2 - \\theta_1 = 5\\theta_1 - \\theta_1 = 4\\theta_1$.<br>Vì công suất cấp nhiệt không đổi nên tỉ lệ nhiệt lượng bằng tỉ lệ thời gian: $\\frac{Q_2}{Q_1} = \\frac{4\\theta_1}{\\theta_1} = 4$.<br>Ta có: $m\\lambda = 4 m c \\Delta t \\Rightarrow \\lambda = 4 c \\Delta t = 4 \\times 2,10 \\times 10^3 \\times 40 = 3,36 \\times 10^5 \\text{ J/kg}$.<br>Do đó $x = 3,36$.",
     image: "cau_3_p3.png"
   },
   {
     id: "p3_5",
     part: 3,
-    question: "Một hệ làm nóng nước bằng năng lượng mặt trời có hiệu suất chuyển đổi $22\\%$, cường độ bức xạ mặt trời lên bộ thu nhiệt là $980 \\text{ W/m}^2$, diện tích bộ thu là $20 \\text{ m}^2$. Cho nhiệt dung riêng của nước là $4180 \\text{ J/kg.K}$, khối lượng riêng của nước là $1000 \\text{ kg/m}^3$.\nCông suất bức xạ chiếu lên bộ thu nhiệt là bao nhiêu kW (làm tròn kết quả đến chữ số hàng phần chục)?",
+    question: "Một hệ làm nóng nước bằng năng lượng mặt trời có hiệu suất chuyển đổi $22\\%$, cường độ bức xạ mặt trời lên bộ thu nhiệt là $980 \\text{ W/m}^2$, diện tích bộ thu là $20 \\text{ m}^2$. Cho nhiệt dung riêng của nước là $4180 \\text{ J/kg.K}$, khối lượng riêng của nước là $1000 \\text{ kg/m}^3$.<br>Công suất bức xạ chiếu lên bộ thu nhiệt là bao nhiêu kW (làm tròn kết quả đến chữ số hàng phần chục)?",
     correctAnswer: "19.6",
     explanation: "Công suất bức xạ mặt trời chiếu lên toàn bộ diện tích tấm thu nhiệt là $P = I \\cdot S = 980 \\cdot 20 = 19600 \\text{ W} = 19,6 \\text{ kW}$.",
     image: "cau_5_p3.png"
@@ -259,9 +259,9 @@ export const examData = [
   {
     id: "p3_6",
     part: 3,
-    question: "Một hệ làm nóng nước bằng năng lượng mặt trời có hiệu suất chuyển đổi $22\\%$, cường độ bức xạ mặt trời lên bộ thu nhiệt là $980 \\text{ W/m}^2$, diện tích bộ thu là $20 \\text{ m}^2$. Cho nhiệt dung riêng của nước là $4180 \\text{ J/kg.K}$, khối lượng riêng của nước là $1000 \\text{ kg/m}^3$.\nNếu hệ thống đó làm nóng $40 \\text{ lít}$ nước thì trong khoảng thời gian $30 \\text{ phút}$, nhiệt độ của nước tăng thêm bao nhiêu $^\\circ\\text{C}$ (làm tròn kết quả đến chữ số hàng phần chục)?",
+    question: "Một hệ làm nóng nước bằng năng lượng mặt trời có hiệu suất chuyển đổi $22\\%$, cường độ bức xạ mặt trời lên bộ thu nhiệt là $980 \\text{ W/m}^2$, diện tích bộ thu là $20 \\text{ m}^2$. Cho nhiệt dung riêng của nước là $4180 \\text{ J/kg.K}$, khối lượng riêng của nước là $1000 \\text{ kg/m}^3$.<br>Nếu hệ thống đó làm nóng $40 \\text{ lít}$ nước thì trong khoảng thời gian $30 \\text{ phút}$, nhiệt độ của nước tăng thêm bao nhiêu $^\\circ\\text{C}$ (làm tròn kết quả đến chữ số hàng phần chục)?",
     correctAnswer: "46.4",
-    explanation: "Nhiệt lượng toàn phần chiếu lên tấm thu trong thời gian $t = 30 \\text{ phút} = 1800 \\text{ s}$ là: $Q_{\\text{tp}} = P \\cdot t = 19600 \\cdot 1800 \\text{ J}$.\nNhiệt lượng nước thu vào có ích với hiệu suất $H = 22\\%$ là $Q = H \\cdot Q_{\\text{tp}} = 0,22 \\cdot 19600 \\cdot 1800 = 7761600 \\text{ J}$.\nKhối lượng $40 \\text{ lít}$ nước là $m = V \\cdot D = 40 \\cdot 10^{-3} \\cdot 1000 = 40 \\text{ kg}$.\nTheo công thức $Q = m c \\Delta t \\Rightarrow \\Delta t = \\frac{Q}{mc} = \\frac{7761600}{40 \\cdot 4180} \\approx 46,4^\\circ\\text{C}$.",
+    explanation: "Nhiệt lượng toàn phần chiếu lên tấm thu trong thời gian $t = 30 \\text{ phút} = 1800 \\text{ s}$ là: $Q_{\\text{tp}} = P \\cdot t = 19600 \\cdot 1800 \\text{ J}$.<br>Nhiệt lượng nước thu vào có ích với hiệu suất $H = 22\\%$ là $Q = H \\cdot Q_{\\text{tp}} = 0,22 \\cdot 19600 \\cdot 1800 = 7761600 \\text{ J}$.<br>Khối lượng $40 \\text{ lít}$ nước là $m = V \\cdot D = 40 \\cdot 10^{-3} \\cdot 1000 = 40 \\text{ kg}$.<br>Theo công thức $Q = m c \\Delta t \\Rightarrow \\Delta t = \\frac{Q}{mc} = \\frac{7761600}{40 \\cdot 4180} \\approx 46,4^\\circ\\text{C}$.",
     image: "cau_5_p3.png"
   }
 ];
