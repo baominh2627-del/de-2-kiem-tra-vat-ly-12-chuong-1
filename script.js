@@ -27,19 +27,17 @@ let studentClass = "";
 
 window.addEventListener("DOMContentLoaded", () => {
   const session = getMTSeduSession();
-  if (!session) {
-    const loginCard = loginScreen.querySelector(".form-card") || loginScreen.querySelector(".card");
-    if (loginCard) showLoginRequired(loginCard, RETURN_HASH);
-    return;
-  }
-  studentName = session.displayName || session.username;
-  studentClass = session.username;
-  insertBackButton();
 
-  // Luôn hiện bảng hướng dẫn trước, chờ người dùng bấm nút xác nhận
+  // Luôn gắn listener trước — đảm bảo btn-start-exam tồn tại
   const btnStart = document.getElementById("btn-start-exam");
   if (btnStart) {
     btnStart.addEventListener("click", () => {
+      if (!session) {
+        // Nếu chưa đăng nhập, hiện yêu cầu login thay vì vào bài
+        const loginCard = loginScreen.querySelector(".form-card") || loginScreen.querySelector(".card");
+        if (loginCard) showLoginRequired(loginCard, RETURN_HASH);
+        return;
+      }
       const draft = JSON.parse(localStorage.getItem(DRAFT_KEY));
       if (draft && !draft.isFinished && draft.studentName === studentName) {
         loadDraftAndContinue(draft);
@@ -48,6 +46,14 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  if (!session) {
+    // Chưa đăng nhập: hiện thông báo nhỏ nhưng vẫn giữ trang hướng dẫn
+    return;
+  }
+  studentName = session.displayName || session.username;
+  studentClass = session.username;
+  insertBackButton();
 });
 
 function startExamDirectly() {
