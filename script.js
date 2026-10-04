@@ -40,7 +40,10 @@ window.addEventListener("DOMContentLoaded", () => {
   if (draft && !draft.isFinished && draft.studentName === studentName) {
     loadDraftAndContinue(draft);
   } else {
-    startExamDirectly();
+    // Hiện bảng hướng dẫn, chờ người dùng bấm nút
+    document.getElementById("btn-start-exam").addEventListener("click", () => {
+      startExamDirectly();
+    });
   }
 });
 
