@@ -36,13 +36,16 @@ window.addEventListener("DOMContentLoaded", () => {
   studentClass = session.username;
   insertBackButton();
 
-  const draft = JSON.parse(localStorage.getItem(DRAFT_KEY));
-  if (draft && !draft.isFinished && draft.studentName === studentName) {
-    loadDraftAndContinue(draft);
-  } else {
-    // Hiện bảng hướng dẫn, chờ người dùng bấm nút
-    document.getElementById("btn-start-exam").addEventListener("click", () => {
-      startExamDirectly();
+  // Luôn hiện bảng hướng dẫn trước, chờ người dùng bấm nút xác nhận
+  const btnStart = document.getElementById("btn-start-exam");
+  if (btnStart) {
+    btnStart.addEventListener("click", () => {
+      const draft = JSON.parse(localStorage.getItem(DRAFT_KEY));
+      if (draft && !draft.isFinished && draft.studentName === studentName) {
+        loadDraftAndContinue(draft);
+      } else {
+        startExamDirectly();
+      }
     });
   }
 });
