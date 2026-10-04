@@ -75,7 +75,7 @@ function renderExam() {
   const partTitles = {
     1: { title: "Phần I — Trắc nghiệm khách quan", score: "4.5 điểm", sub: "Mỗi câu đúng được 0.25 điểm. Chọn một đáp án duy nhất." },
     2: { title: "Phần II — Trắc nghiệm đúng sai", score: "4.0 điểm", sub: "Trong mỗi ý a, b, c, d, chọn đúng hoặc sai." },
-    3: { title: "Phần III — Trắc nghiệm trả lời ngắn", score: "3.0 điểm", sub: "Mỗi câu 0.5 điểm. Nhập đáp án (chỉ ghi số hoặc kết quả cuối cùng)." },
+    3: { title: "Phần III — Trắc nghiệm trả lời ngắn", score: "1.5 điểm", sub: "Mỗi câu 0.25 điểm. Nhập đáp án (chỉ ghi số hoặc kết quả cuối cùng)." },
   };
 
   examData.forEach((q) => {
@@ -304,7 +304,7 @@ function submitExam() {
       const userVal = (userAnswers[q.id] || "").trim().toLowerCase();
       const correct = q.correctAnswer.toLowerCase();
       if (userVal === correct || userVal === correct.replace(".", ",")) {
-        totalScore += 0.5; diemPhan3 += 0.5; input.classList.add("correct-ans");
+        totalScore += 0.25; diemPhan3 += 0.25; input.classList.add("correct-ans");
       } else { input.classList.add("wrong-ans"); }
     }
   });
