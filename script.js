@@ -12,7 +12,7 @@ const submitBtn = document.getElementById("submit-btn");
 // ===== CHỈ THAY 4 DÒNG NÀY =====
 const MA_DE        = "VATLY12_CHUONG1_DE2";           // mã đề Firebase (không dấu, không cách)
 const DRAFT_KEY    = "examDraft_VATLY12_CHUONG1_DE2"; // key localStorage
-const EXAM_MINUTES = 45;                               // thời gian làm bài (phút)
+const EXAM_MINUTES = 50;                               // thời gian làm bài (phút)
 const RETURN_HASH  = "#physics";                       // hash trang MTSedu
 // ================================
 
@@ -166,10 +166,21 @@ function renderExam() {
 
 function renderBoard() {
   if (!questionBoard) return;
-  questionBoard.innerHTML = `<div class="board-legend">
+  // Legend riêng — không nằm trong q-grid để không làm lệch các ô số
+  const legend = document.createElement("div");
+  legend.className = "board-legend";
+  legend.innerHTML = `
     <span class="box"></span><span class="box-label">Chưa làm</span>
     <span class="box done"></span><span class="box-label">Đã làm</span>
-    <span class="box flagged"></span><span class="box-label">Đánh dấu</span></div>`;
+    <span class="box flagged"></span><span class="box-label">Đánh dấu</span>`;
+  questionBoard.appendChild(legend);
+
+  // Grid chứa các ô số câu
+  const grid = document.createElement("div");
+  grid.className = "q-grid";
+  grid.id = "q-grid-inner";
+  questionBoard.appendChild(grid);
+
   examData.forEach((q, index) => {
     const box = document.createElement("button");
     box.className = "q-box"; box.id = `box-${q.id}`; box.innerText = index + 1; box.type = "button";
@@ -177,7 +188,7 @@ function renderBoard() {
       e.preventDefault();
       document.getElementById(`q-card-${q.id}`).scrollIntoView({ behavior: "smooth", block: "center" });
     });
-    questionBoard.appendChild(box);
+    grid.appendChild(box);
   });
   updateBoard();
 }

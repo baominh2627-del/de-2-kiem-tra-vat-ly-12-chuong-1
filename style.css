@@ -99,6 +99,12 @@ body {
   line-height: 18px;
 }
 
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .q-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
