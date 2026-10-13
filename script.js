@@ -178,20 +178,8 @@ function renderExam() {
 
 function renderBoard() {
   if (!questionBoard) return;
-  // Legend riêng — không nằm trong q-grid để không làm lệch các ô số
-  const legend = document.createElement("div");
-  legend.className = "board-legend";
-  legend.innerHTML = `
-    <span class="box"></span><span class="box-label">Chưa làm</span>
-    <span class="box done"></span><span class="box-label">Đã làm</span>
-    <span class="box flagged"></span><span class="box-label">Đánh dấu</span>`;
-  questionBoard.appendChild(legend);
-
-  // Grid chứa các ô số câu
-  const grid = document.createElement("div");
-  grid.className = "q-grid";
-  grid.id = "q-grid-inner";
-  questionBoard.appendChild(grid);
+  const grid = questionBoard.querySelector(".q-grid") || questionBoard;
+  grid.innerHTML = "";
 
   examData.forEach((q, index) => {
     const box = document.createElement("button");

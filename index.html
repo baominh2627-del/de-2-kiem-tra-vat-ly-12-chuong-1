@@ -49,12 +49,8 @@
       <div class="page-footer">Vật Lý 12 · tự động chấm điểm theo đúng barem &amp; lưu kết quả</div>
     </div>
 
-    <!-- Màn hình làm bài thi -->
+    <!-- Màn hình Làm bài thi -->
     <div id="exam-screen" class="hidden container">
-      <div id="board-container" class="board-card">
-        <h3>Bảng Điều Hướng</h3>
-        <div id="question-board" class="board-wrapper"></div>
-      </div>
       <div class="exam-header-block">
         <div class="exam-header-top">
           <div class="meta-text">KIỂM TRA 50 PHÚT · MÔN VẬT LÝ 12</div>
@@ -62,7 +58,10 @@
           <div class="meta-sub">18 câu trắc nghiệm · 4 câu đúng/sai · 6 câu trả lời ngắn — thang điểm 10</div>
           <hr class="dashed-line" />
         </div>
-        <div class="exam-info-bar sticky">
+      </div>
+      <!-- THANH GHIM TRÊN CÙNG -->
+      <div class="top-sticky">
+        <div class="exam-info-bar">
           <div class="student-info">
             Thí sinh: <strong id="display-name" style="color: white"></strong> ·
             Lớp <strong id="display-class" style="color: white"></strong>
@@ -74,6 +73,12 @@
           <div class="score-pill hidden" id="score-pill">
             <span class="green-dot">✓</span> Điểm: <span id="review-score">0</span>/10
           </div>
+        </div>
+        <div id="board-container">
+          <div id="question-board">
+            <div class="q-grid"></div>
+          </div>
+          <button id="board-expand" type="button" title="Mở rộng bảng câu hỏi" aria-expanded="false">▼</button>
         </div>
       </div>
       <div id="questions-container"></div>
@@ -93,6 +98,18 @@
       </div>
     </div>
 
+    <script>
+      document.addEventListener("click", function (e) {
+        var board = document.getElementById("board-container");
+        var btn = document.getElementById("board-expand");
+        if (!board || !btn) return;
+        if (e.target === btn || btn.contains(e.target)) {
+          var expanded = board.classList.toggle("expanded");
+          btn.textContent = expanded ? "▲" : "▼";
+          btn.setAttribute("aria-expanded", expanded);
+        }
+      });
+    </script>
     <script type="module" src="script.js"></script>
   </body>
 </html>
