@@ -196,9 +196,9 @@ export const examData = [
       { text: "Dụng cụ (3) là nhiệt kế thủy ngân (nhiệt kế y tế) hoạt động dựa trên tính chất giãn nở vì nhiệt của thủy ngân.", correct: true },
       { text: "Nội năng của nước ở bình (2) tăng do thế năng của cột nước tăng vì nó được dâng cao hơn so với ban đầu.", correct: false },
       { text: "Thang chia nhiệt độ của nhiệt kế thủy ngân ghi nhiệt độ từ $35^\\circ\\text{C}$ đến $42^\\circ\\text{C}$ nên việc lựa chọn nhiệt độ trong thí nghiệm của nhóm là một trong những cách chọn hợp lý.", correct: false },
-      { text: "Sau một thời gian cả hai nhiệt kế chỉ giá trị không đổi và hai giá trị này bằng nhau chứng tỏ không có sự truyền nhiệt lượng giữa hai vật có nhiệt độ bằng nhau.", correct: false }
+      { text: "Sau một thời gian cả hai nhiệt kế chỉ giá trị không đổi và hai giá trị này bằng nhau chứng tỏ không có sự truyền nhiệt lượng giữa hai vật có nhiệt độ bằng nhau.", correct: true }
     ],
-    explanation: "a) Đúng. Nhiệt kế thủy ngân hoạt động dựa trên sự giãn nở nhiệt của thủy ngân.<br>b) Sai. Thế năng trọng trường không phải là nội năng. Nội năng chỉ gồm động năng phân tử và thế năng tương tác phân tử.<br>c) Sai. Nhiệt kế y tế có phần eo thắt để giữ mức thủy ngân nên không thể tự tụt xuống khi đo nhiệt độ giảm dần, do đó KHÔNG hợp lý trong thí nghiệm theo dõi nhiệt độ liên tục giảm.<br>d) Sai. Khi cân bằng nhiệt, vẫn có sự trao đổi nhiệt lượng vi mô giữa hai vật nhưng tốc độ bằng nhau nên nhiệt lượng truyền ròng bằng 0, chứ không phải hoàn toàn không có sự truyền nhiệt.",
+    explanation: "a) Đúng. Nhiệt kế thủy ngân hoạt động dựa trên sự giãn nở nhiệt của thủy ngân.<br>b) Sai. Thế năng trọng trường không phải là nội năng. Nội năng chỉ gồm động năng phân tử và thế năng tương tác phân tử.<br>c) Sai. Nhiệt kế y tế có phần eo thắt để giữ mức thủy ngân nên không thể tự tụt xuống khi đo nhiệt độ giảm dần, do đó KHÔNG hợp lý trong thí nghiệm theo dõi nhiệt độ liên tục giảm.<br>d) Đúng. Theo định nghĩa trạng thái cân bằng nhiệt trong SGK Vật lí 12 (Chương 1 - Vật lí nhiệt): Hai vật ở trạng thái cân bằng nhiệt khi có nhiệt độ bằng nhau và không có sự truyền năng lượng nhiệt (nhiệt lượng) giữa chúng. Do đó, khi hai nhiệt kế chỉ giá trị không đổi và bằng nhau chứng tỏ hệ đã đạt cân bằng nhiệt và không có sự truyền nhiệt lượng giữa hai vật.",
     image: "cau_3_p2.png"
   },
   {
